@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scripting Languages – Complete Overview</title>
+<style>
+  /* ====== Base Reset ====== */
+  * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif;}
+  body {
+    background-color: #f5f6fa;
+    color: #222;
+    line-height: 1.7;
+  }
+
+  header {
+    text-align: center;
+    padding: 50px 20px 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #222;
+    position: relative;
+  }
+
+  header span {
+    color: #0078ff;
+  }
+
+  /* ====== Logo Animation ====== */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    animation: fadeIn 2s ease;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+    opacity: 0.8;
+    transition: transform 0.6s, opacity 0.6s;
+  }
+
+  .logo:hover {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 1;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  /* ====== Sections ====== */
+  section {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    animation: slideUp 1.2s ease;
+  }
+
+  @keyframes slideUp {
+    from {transform: translateY(20px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+  }
+
+  h2 {
+    color: #0078ff;
+    margin-bottom: 15px;
+    border-left: 4px solid #0078ff;
+    padding-left: 10px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  .highlight {
+    background: #e9f2ff;
+    padding: 6px 10px;
+    border-radius: 6px;
+  }
+
+  footer {
+    text-align: center;
+    margin: 60px 0 30px;
+    color: #555;
+    font-size: 0.95rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span>Scripting Languages</span> — A Complete Overview
+  <div class="logo-container">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" class="logo">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="logo">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="logo">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash" class="logo">
+  </div>
+</header>
+
+<section id="intro">
+  <h2>What is a Scripting Language?</h2>
+  <p>
+    A <b>scripting language</b> is a type of programming language used to automate tasks,
+    create dynamic websites, or control other applications. Instead of being compiled first
+    into machine code like C or C++, a script runs directly through an <b>interpreter</b>.
+    This makes scripting languages faster to write, test, and modify.
+  </p>
+  <p>
+    They are widely used in web development, automation, data processing, and operating system
+    tasks. Scripting languages make computers do repetitive or logical operations automatically
+    without needing the user to manually control every step.
+  </p>
+</section>
+
+<section id="types">
+  <h2>Types of Scripting Languages</h2>
+
+  <h3>1. Client-Side Scripting</h3>
+  <p>
+    <b>Client-side scripting</b> happens inside the user’s browser. It’s used to make websites interactive,
+    responsive, and visually dynamic. Instead of waiting for a server’s response, actions happen instantly
+    on the page. This makes websites faster and more user-friendly.
+  </p>
+  <p>
+    <b>Examples:</b> JavaScript, TypeScript, VBScript (older).  
+    <b>Used for:</b> animations, validation forms, pop-ups, dynamic content updates, etc.
+  </p>
+  <p class="highlight">
+    💡 <b>Example:</b> When you type your password and a message says “Weak” or “Strong”
+    instantly without reloading — that’s client-side scripting in action.
+  </p>
+
+  <h3>2. Server-Side Scripting</h3>
+  <p>
+    <b>Server-side scripting</b> runs on the web server before sending anything to your browser.
+    It’s responsible for database access, file handling, user authentication, and generating
+    dynamic web content.
+  </p>
+  <p>
+    <b>Examples:</b> PHP, Python, Ruby, Node.js.  
+    <b>Used for:</b> login systems, APIs, content management, and handling form submissions.
+  </p>
+  <p class="highlight">
+    💡 <b>Example:</b> When you log into Facebook, the server checks your email and password,
+    pulls your data, and sends back your profile — that’s server-side scripting.
+  </p>
+
+  <h3>3. System/Automation Scripting</h3>
+  <p>
+    <b>Automation scripting</b> is used by system administrators, developers, and engineers to automate
+    repetitive or time-consuming tasks. These scripts interact directly with the operating system.
+  </p>
+  <p>
+    <b>Examples:</b> Bash, Python, PowerShell.  
+    <b>Used for:</b> file backups, system monitoring, task scheduling, and log analysis.
+  </p>
+  <p class="highlight">
+    💡 <b>Example:</b> A Python script that automatically renames hundreds of files or
+    sends daily report emails is an automation script.
+  </p>
+</section>
+
+<section id="examples">
+  <h2>Popular Scripting Languages</h2>
+  <p>
+    There are dozens of scripting languages, but these four are the most widely used today:
+  </p>
+  <ul>
+    <li><b>JavaScript:</b> Runs in browsers to make web pages interactive.</li>
+    <li><b>Python:</b> General-purpose scripting used for automation, AI, and backend systems.</li>
+    <li><b>PHP:</b> Core language behind WordPress and many dynamic web apps.</li>
+    <li><b>Bash:</b> Used in Linux systems for automation and configuration.</li>
+  </ul>
+</section>
+
+<section id="features">
+  <h2>Common Features of Scripting Languages</h2>
+  <ul>
+    <li>✅ <b>Easy to Learn:</b> Use simple syntax that reads close to human language.</li>
+    <li>⚙️ <b>Interpreted:</b> Runs directly without compiling into machine code.</li>
+    <li>💻 <b>Fast Development:</b> Great for prototypes and automation scripts.</li>
+    <li>🌐 <b>Integration Friendly:</b> Works well with other software or languages.</li>
+    <li>🧩 <b>Reusable:</b> Small scripts can be reused in many projects.</li>
+    <li>⚡ <b>Cross-Platform:</b> Works on Windows, Linux, and macOS.</li>
+  </ul>
+</section>
+
+<section id="conclusion">
+  <h2>Conclusion</h2>
+  <p>
+    Scripting languages bridge the gap between humans and machines. They make complex systems
+    easy to automate, control, and expand. From building websites to managing servers,
+    scripting is everywhere — and learning it is one of the smartest steps for anyone
+    interested in programming or technology.
+  </p>
+</section>
+
+<footer>
+  © 2025 | Educational Project on Scripting Languages | Built with ❤️ and JavaScript
+</footer>
+
+</body>
+</html>
